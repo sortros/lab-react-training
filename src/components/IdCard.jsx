@@ -5,14 +5,16 @@ export default class IdCard extends Component {
         return (
             <div>
                 <div>
-                    <img src={this.props.picture} />
+                    <img src={this.props.picture} alt=""/>
                 </div>
                 <div>
-                    <p>First name: {this.props.firstName}</p>
-                    <p>Last name:{this.props.lastName}</p>
-                    <p>Gender:</p>
-                    <p>Height:</p>
-                    <p>Birth:{this.props.birth}</p>
+                    <p>First name:  {this.props.firstName}</p>
+                    <p>Last name: {this.props.lastName}</p>
+                    <p>Gender: {this.props.gender}</p>
+                    <p>Height: {this.props.height}cm</p>
+                    <p>Birth: {"this.props.birth"}</p>
+                    <p lang={this.props.lang}>Greeting: {this.props.Greetings}</p>
+                    <p></p>
                 </div>
             </div>
         )
